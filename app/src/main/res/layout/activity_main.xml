@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/creatorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Kalia Creation"
+        android:textSize="24sp"
+        android:textColorHighlight="@color/black"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+
+    <Button
+        android:id="@+id/flashlightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Turn On"
+        android:layout_centerInParent="true"
+        android:padding="36dp" />
+
+    <SeekBar
+        android:id="@+id/powerSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashlightButton"
+        android:layout_marginTop="16dp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/powerSeekBar"
+        android:layout_marginTop="16dp"
+        android:padding="16dp" />
+</RelativeLayout>
